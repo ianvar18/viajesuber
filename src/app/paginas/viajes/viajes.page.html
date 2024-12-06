@@ -31,6 +31,10 @@
     </ion-item>
   </ion-list>
 
+  <ion-button expand="full" (click)="irlogin()">
+    Volver al Inicio
+  </ion-button>
+
   <ion-card *ngFor="let i of viajes" (click)="seleccionarViaje(i.id_usuario)">
     <div class="box">
       <ion-img [src]="i.imagen_vehiculo"></ion-img>

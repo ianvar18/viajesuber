@@ -48,9 +48,6 @@ export class ViajesPage implements OnInit {
         } else {
           this.helper.showAlert('No se encontraron viajes', 'Información');
         }
-      } else {
-        this.helper.showAlert('No se encontró token. Inicia sesión nuevamente.', 'Error');
-        this.router.navigateByUrl('/login'); // Redirigir al login si no hay token
       }
       
       this.loaded = true; // Marcar que los datos han sido cargados
@@ -78,7 +75,6 @@ export class ViajesPage implements OnInit {
         }
       } else {
         this.helper.showAlert('No se encontró token o correo. Inicia sesión nuevamente.', 'Error');
-        this.router.navigateByUrl('/login');
       }
     } catch (error) {
       console.error('Error al cargar el usuario:', error);
