@@ -1,3 +1,7 @@
+# Ignorar la caché de Angular
+.angular
+node_modules/
+dist/
 # Using Android gitignore template: https://github.com/github/gitignore/blob/HEAD/Android.gitignore
 
 # Built application files
